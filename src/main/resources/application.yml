@@ -1,0 +1,11 @@
+spring:
+  mongodb:
+    uri: ${MONGODB_URI:mongodb://localhost:27017/ahoi_burger}
+
+app:
+  # Clients must send this value in the X-API-Key header. Override in production: API_KEY=...
+  api-key: ${API_KEY:dev-api-key}
+
+restaurant:
+  name: Ahoi Burger!
+  address: Road 1, 4020 Linz, Austria
